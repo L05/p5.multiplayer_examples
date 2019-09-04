@@ -74,5 +74,5 @@
 **/DerivedDataCache/*
 
 # Custom ignores
-**/TouchDesigner/Backup/*
-**/TouchDesigner/*.*.toe
+**/*TouchDesigner/Backup/*
+**/*TouchDesigner/*.*.toe
