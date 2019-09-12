@@ -1,3 +1,5 @@
+node_modules
+
 # Visual Studio 2015 user specific files
 **/.vs/
 
@@ -76,3 +78,5 @@
 # Custom ignores
 **/*TouchDesigner/Backup/*
 **/*TouchDesigner/*.*.toe
+CrashAutoSave.toe
+*.dmp
