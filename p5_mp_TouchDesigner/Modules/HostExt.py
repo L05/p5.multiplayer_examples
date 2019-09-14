@@ -18,11 +18,14 @@ class HostExt:
 	def __init__(self, ownerComp):
 		# The component to which this extension is attached
 		self.ownerComp = ownerComp
-		self.roomId = str(self.ownerComp.par.Roomid)
-		self.id = None
-		self.socketIoDat = op('iparHost').par.Socketiodat
 
+		# Initialize internal variables
+		self.roomId = str(self.ownerComp.par.Roomid)
+		self.socketIoDat = op('iparHost').par.Socketiodat
+		self.id = None
 		self.hostConnected = False
+
+		
 		
 		return
 
