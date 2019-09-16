@@ -14,8 +14,8 @@
 *.ai filter=lfs diff=lfs merge=lfs -text
 
 # TouchDesigner file types.
-*.toe filter=lfs diff=lfs merge=lfs -text
-*.tox filter=lfs diff=lfs merge=lfs -text
+# *.toe filter=lfs diff=lfs merge=lfs -text
+# *.tox filter=lfs diff=lfs merge=lfs -text
 
 # Anything in `/RawContent` dir.
 **/RawContent/**/* filter=lfs diff=lfs merge=lfs -text
