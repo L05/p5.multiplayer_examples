@@ -38,7 +38,10 @@ class HostExt:
 	def Connect(self):
 		data = { 'name': 'host', 'roomId': self.roomId }
 		self.socketIoDat.eval().emit('join', data=data)
+		return
 
+	def Reset(self):
+		self.socketIoDat.eval().par.reset.pulse()
 		return
 	
 	def SetRoomId(self, data):
