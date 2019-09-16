@@ -21,7 +21,7 @@ class HostExt:
 
 		# Initialize internal variables
 		self.roomId = str(self.ownerComp.par.Roomid)
-		self.socketIoDat = op('iparHost').par.Socketiodat
+		self.socketIoDat = ipar.Host.Socketiodat
 		self.id = None
 		self.hostConnected = False
 
@@ -39,6 +39,10 @@ class HostExt:
 		data = { 'name': 'host', 'roomId': self.roomId }
 		self.socketIoDat.eval().emit('join', data=data)
 
+		return
+	
+	def SetRoomId(self, data):
+		self.roomId = data
 		return
 
 	def OnHostConnect(self, data):
