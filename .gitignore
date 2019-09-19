@@ -77,6 +77,6 @@ node_modules
 
 # Custom ignores
 **/*TouchDesigner/Backup/*
-# **/*TouchDesigner/*.*.toe
+**/*TouchDesigner/*.*.toe
 CrashAutoSave.toe
 *.dmp
